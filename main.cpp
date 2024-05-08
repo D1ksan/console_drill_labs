@@ -5,3 +5,13 @@
 #include "./tests/sphere_test.cpp"
 #include "./tests/pyramid_test.cpp"
 
+int main() {
+    testSquare();
+    testCircle();
+    testTriangle();
+    testCylinder();
+    testSphere();
+    testPyramid();
+    
+    return 0;
+}
