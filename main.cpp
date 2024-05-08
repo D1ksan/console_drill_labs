@@ -1,0 +1,1 @@
+#include "./tests/square_test.cpp"
