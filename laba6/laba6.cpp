@@ -46,6 +46,7 @@ int main() {
         std::cout << elem << " ";
     }
     std::cout << std::endl;
-
+    // Закрытие файла
+    inputFile.close();
     return 0;
 }
