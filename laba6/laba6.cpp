@@ -31,3 +31,21 @@ int main() {
     vector.insert(std::upper_bound(vector.begin(), vector.end(), newElement), newElement);
     int elementToFind = 3;
     auto it = std::find(vector.begin(), vector.end(), elementToFind);
+    // Вывод индекса найденного элемента или сообщения об отсутствии
+    if (it != vector.end()) {
+        int index = std::distance(vector.begin(), it);
+        std::cout << "Index of element " << elementToFind << " after all operations: " << index << std::endl;
+    }
+    else {
+        std::cout << "Element not found after all operations" << std::endl;
+    }
+
+    vector.erase(std::unique(vector.begin(), vector.end()), vector.end());
+    std::cout << "Updated vector: ";
+    for (int elem : vector) {
+        std::cout << elem << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
